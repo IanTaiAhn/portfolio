@@ -32,7 +32,7 @@ export default function AboutPage() {
           {/* Bio */}
           <div className="mt-12 space-y-5 font-body text-lg text-cream/80 leading-relaxed max-w-2xl">
             <p>
-              I&apos;m Ian — a software engineer and ML practitioner who stays
+              I&apos;m Ian Tai, a software engineer and ML practitioner who stays
               locked in on hard problems for as long as it takes. The common
               thread across everything I do is a high skill cap: I&apos;m drawn
               to disciplines that take years of deliberate effort before you
@@ -41,7 +41,7 @@ export default function AboutPage() {
             <p>
               On the technical side that means machine learning, data science,
               and systems engineering. Off-screen it means snowboarding and
-              piano — things where the feedback loop is immediate and the
+              piano, things where the feedback loop is immediate and the
               ceiling keeps moving. I&apos;m a life-long learner and I live for
               the progression.
             </p>
