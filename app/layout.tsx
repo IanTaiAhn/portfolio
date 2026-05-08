@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Newsreader, JetBrains_Mono } from "next/font/google";
+import { Bricolage_Grotesque, Newsreader, JetBrains_Mono, Nanum_Brush_Script } from "next/font/google";
 import "./globals.css";
 
 // PLACEHOLDER FONTS — chosen for an editorial-meets-technical feel.
@@ -24,6 +24,13 @@ const mono = JetBrains_Mono({
   display: "swap",
 });
 
+const calligraphy = Nanum_Brush_Script({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-calligraphy",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   // PLACEHOLDER — replace with real name + tagline
   title: "Ian Tai Ahn — Full Stack / ML / Data Science",
@@ -37,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
+    <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable} ${calligraphy.variable}`}>
       <body className="min-h-screen bg-navy text-cream antialiased">
         {children}
       </body>

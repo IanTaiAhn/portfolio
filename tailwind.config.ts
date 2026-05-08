@@ -30,6 +30,7 @@ const config: Config = {
         display: ["var(--font-display)", "serif"],
         body: ["var(--font-body)", "serif"],
         mono: ["var(--font-mono)", "monospace"],
+        calligraphy: ["var(--font-calligraphy)", "cursive"],
       },
       fontSize: {
         // Editorial display sizes
