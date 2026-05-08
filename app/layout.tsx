@@ -26,9 +26,9 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   // PLACEHOLDER — replace with real name + tagline
-  title: "[Your Name] — ML / NLP / Econometrics",
+  title: "Ian Tai Ahn — Full Stack / ML / Data Science",
   description:
-    "Portfolio of [Your Name] — selected projects in machine learning, NLP, data science, and econometrics.",
+    "Portfolio of Ian Tai Ahn | curated projects in machine learning, data science, and software.",
 };
 
 export default function RootLayout({

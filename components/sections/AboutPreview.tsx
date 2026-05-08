@@ -12,7 +12,7 @@ export default function AboutPreview() {
         </p>
         <h2 className="mt-4 max-w-4xl font-display text-display-md text-cream">
           {/* PLACEHOLDER: about teaser headline (1 sentence, big) */}
-          A sentence about your perspective on the work.
+          A mixture of data science, machine learning, software engineering, all blended together in my brain.
         </h2>
         <Link
           href="/about"

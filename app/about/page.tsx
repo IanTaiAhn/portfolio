@@ -1,11 +1,6 @@
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
 
-// ABOUT (/about)
-// Sections to flesh out:
-//   - Story (3–4 sentences, editorial tone)
-//   - Skills as visual cluster (NOT a list — consider radial/orbit/tag-cloud layout)
-//   - Resume download + LinkedIn
 export default function AboutPage() {
   return (
     <main className="relative">
@@ -16,12 +11,11 @@ export default function AboutPage() {
             01 / About
           </p>
           <h1 className="mt-6 font-display text-display-lg text-cream">
-            {/* PLACEHOLDER: About headline */}
             About
           </h1>
-          {/* TODO: Story paragraph */}
-          {/* TODO: Skills cluster component */}
-          {/* TODO: Resume + LinkedIn CTAs */}
+          I'm able to stay focused on multiple problems for prolonged amounts of time.
+          Looking at all of the interests and hobbies I have seem to have one important characteristic. High skill cap.
+          I'm a life-long learner and live for the progression. Progression in software engineering, machine learning, systems, snowboarding, piano, and pretty much any highly technical activity that takes years of dedication to even begin to grasp the fundamentals of.
         </div>
       </section>
       <Footer />

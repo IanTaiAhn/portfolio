@@ -18,7 +18,7 @@ export default function Nav() {
           className="font-display text-lg tracking-tight text-cream hover:text-amber transition-colors"
         >
           {/* PLACEHOLDER: monogram or full name */}
-          [N.N.]
+          I.A.
         </Link>
         <ul className="hidden items-center gap-8 md:flex">
           {links.map((l) => (

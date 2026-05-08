@@ -11,11 +11,11 @@ export default function Hero() {
         </p>
         <h1 className="mt-8 font-display text-display-xl text-cream">
           {/* PLACEHOLDER: animated headline goes here */}
-          Headline.
+          Curiosities
         </h1>
         <p className="mt-8 max-w-2xl font-body text-xl text-cream/80 md:text-2xl">
           {/* PLACEHOLDER: punchy one-liner about who you are */}
-          One sentence about who you are and what you do.
+          Determined. Focused. Striving. Energetic. Hungry.
         </p>
         {/* TODO: CTA "Explore my work" → #projects-preview */}
         {/* TODO: Scroll indicator (animated arrow / line) */}

@@ -7,11 +7,11 @@ export default function Footer() {
         <div>
           <p className="font-display text-2xl text-cream">
             {/* PLACEHOLDER */}
-            [Your Name]
+            Ian Tai Ahn
           </p>
           <p className="mt-2 font-mono text-xs uppercase tracking-widest text-cream/50">
             {/* PLACEHOLDER tagline / location */}
-            Reston, VA — Available for select work
+            South Ogden, UT
           </p>
         </div>
         <div className="flex flex-col items-start gap-2 md:items-end">
