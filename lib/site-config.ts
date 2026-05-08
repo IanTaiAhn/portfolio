@@ -9,7 +9,7 @@ export const siteConfig = {
   location: "South Ogden, UT",
   email: "iantaiahn@yahoo.com",
   github: "https://github.com/IanTaiAhn",
-  linkedin: "https://linkedin.com/in/yourhandle",
+  linkedin: "https://www.linkedin.com/in/ian-tai-ahn-429366228/",
   resumeUrl: "/resume.pdf", // place file in /public
   domain: "yourname.dev", // tentative
 };
