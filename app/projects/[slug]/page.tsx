@@ -30,11 +30,17 @@ export default function ProjectDetailPage({
             {project.title}
           </h1>
           {/* TODO: Problem section */}
+          Problem
           {/* TODO: Approach section */}
+          Approach
           {/* TODO: Result section */}
+          Result
           {/* TODO: Embedded visual / chart slot */}
+          Visual?
           {/* TODO: Live demo slot (conditional on project.hasDemo) */}
+          Live Demo here
           {/* TODO: GitHub link + back to projects nav */}
+          GitHub Link
         </div>
       </article>
       <Footer />
