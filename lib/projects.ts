@@ -24,8 +24,8 @@ export type Project = {
 const projects: Project[] = [
   {
     slug: "rag-demo",
-    title: "Project One",
-    hook: "Placeholder hook — one line about what this does.",
+    title: "Local RAG Pipeline for Small Corpora",
+    hook: "Quantized 2.5b Qwen to the rescue",
     category: "NLP",
     tags: ["RAG", "LLM", "Python"],
     year: "2025",
@@ -34,8 +34,8 @@ const projects: Project[] = [
   },
   {
     slug: "econometrics-viz",
-    title: "Project Two",
-    hook: "Placeholder hook.",
+    title: "Healthcare Jobs Data",
+    hook: "Live and fresh from FRED",
     category: "Econometrics",
     tags: ["D3", "Causal Inference", "R"],
     year: "2025",
