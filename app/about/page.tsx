@@ -40,8 +40,8 @@ export default function AboutPage() {
             </p>
             <p>
               On the technical side that means machine learning, data science,
-              and systems engineering. Off-screen it means snowboarding and
-              piano, things where the feedback loop is immediate and the
+              and systems engineering. Off-screen it means snowboarding,
+              piano, and cello. Things where the feedback loop is immediate and the
               ceiling keeps moving. I&apos;m a life-long learner and I live for
               the progression.
             </p>
