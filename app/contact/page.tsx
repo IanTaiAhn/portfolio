@@ -106,7 +106,7 @@ export default function ContactPage() {
                   LinkedIn
                 </p>
                 <p className="font-body text-xl text-cream/70 group-hover:text-cream transition-colors">
-                  ian-tai-ahn
+                  Ian Tai Ahn
                 </p>
               </div>
               <svg
