@@ -2,7 +2,7 @@
 // Single source of truth. Swap placeholder entries with real projects.
 // When a project has `hasDemo: true`, the detail page should render its demo component.
 
-export type ProjectCategory = "ML" | "NLP" | "Econometrics" | "Data Science";
+export type ProjectCategory = "ML" | "NLP" | "Econometrics" | "Data Science" | "Automation";
 
 export type Project = {
   slug: string;
@@ -54,13 +54,19 @@ const projects: Project[] = [
       "The dashboard gives hiring decision-makers a single page that goes from raw macro data to an actionable signal with a 6-month forecast. The backend serves realistic dummy data by default, so the full frontend works immediately without a FRED key or trained model — useful for demos and local development.",
   },
   {
-    slug: "bert-classifier",
-    title: "Project Three",
-    hook: "Placeholder hook.",
-    category: "NLP",
-    tags: ["BERT", "Transformers", "PyTorch"],
-    year: "2024",
+    slug: "wornwear-bot",
+    title: "Worn Wear Monitor Bot",
+    hook: "Hunts Patagonia vintage grails so you don't have to",
+    category: "Automation",
+    tags: ["Python", "Playwright", "Automation", "VPS", "ntfy.sh"],
+    year: "2025",
     featured: true,
+    problem:
+      "Patagonia's Worn Wear secondhand site lists vintage grails — Synchilla fleeces, Snap-Ts, Retro-X jackets — that sell out within minutes of going live. Manually refreshing is hopeless. The broader problem is structural: the just-added collection has 15,000+ items, and the site's pagination bails after a few clicks with no new results, so naive scraping only sees a few hundred items and misses anything buried deeper.",
+    approach:
+      "Rather than scraping the full catalog, the bot targets specific search URLs (e.g. vintage+synchilla, vintage+snap-t) that return 100–500 results instead of 15,000 — so pagination completes fully and nothing gets missed. Playwright drives a headless Chromium instance. Items are matched against configurable keywords and style-number patterns (STYLE_NUMBERS=*_vintage catches vintage variants by URL). A seen_items.json file persists across restarts so the bot only alerts on genuinely new listings. When a match is found, ntfy.sh fires a push notification to your phone instantly. AUTO_ADD_CART is available but off by default. The whole thing runs as a systemd service on a $4/mo DigitalOcean droplet.",
+    result:
+      "Catches new vintage listings the moment they appear, rather than whenever you happen to check. The priming workflow — running one or two poll cycles with AUTO_ADD_CART off to populate seen_items.json — means enabling auto-cart later only bags items added after you set it up, not the hundreds of existing ones already in the catalog.",
   },
   {
     slug: "data-science-study",
