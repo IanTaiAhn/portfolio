@@ -40,7 +40,7 @@ export default function AboutPage() {
             </p>
             <p>
               On the technical side that means machine learning, data science,
-              and systems engineering — areas I&apos;ve pursued formally through
+              and your classic computer science that I&apos;ve pursued formally through
               a BS in Computer Science and an MS in Data Science, and keep
               pushing beyond through projects. Off-screen it means snowboarding,
               piano, and cello. Things where the feedback loop is immediate and the
