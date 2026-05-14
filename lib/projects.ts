@@ -68,14 +68,6 @@ const projects: Project[] = [
     result:
       "Catches new vintage listings the moment they appear, rather than whenever you happen to check. The priming workflow — running one or two poll cycles with AUTO_ADD_CART off to populate seen_items.json — means enabling auto-cart later only bags items added after you set it up, not the hundreds of existing ones already in the catalog.",
   },
-  {
-    slug: "data-science-study",
-    title: "Project Four",
-    hook: "Placeholder hook.",
-    category: "Data Science",
-    tags: ["Pandas", "Modeling"],
-    year: "2024",
-  },
 ];
 
 export function getAllProjects(): Project[] {
