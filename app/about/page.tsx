@@ -40,9 +40,9 @@ export default function AboutPage() {
             </p>
             <p>
               On the technical side that means machine learning, data science,
-              and your classic computer science that I&apos;ve pursued formally through
-              a BS in Computer Science and an MS in Data Science, and keep
-              pushing beyond through projects. Off-screen it means snowboarding,
+              and the fundamentals of computer science, all of which I&apos;ve
+              pursued formally through a BS in Computer Science and an MS in Data
+              Science and keep pushing further through projects. Off-screen it means snowboarding,
               piano, and cello. Things where the feedback loop is immediate and the
               ceiling keeps moving. I&apos;m a life-long learner and I live for
               the progression.
