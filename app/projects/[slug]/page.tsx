@@ -1,8 +1,20 @@
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
 import { getProjectBySlug, getAllProjectSlugs } from "@/lib/projects";
 import { notFound } from "next/navigation";
+
+const EconVizDemo = dynamic(() => import("@/components/demos/EconVizDemo"), {
+  ssr: false,
+  loading: () => (
+    <div className="rounded-lg border border-cream/10 bg-navy-mid flex items-center justify-center h-48">
+      <p className="font-mono text-xs uppercase tracking-widest text-cream/30">
+        Loading…
+      </p>
+    </div>
+  ),
+});
 
 export async function generateStaticParams() {
   return getAllProjectSlugs().map((slug) => ({ slug }));
@@ -108,12 +120,15 @@ export default function ProjectDetailPage({
                 <p className="font-mono text-xs uppercase tracking-[0.2em] text-amber mb-5">
                   04 / Demo
                 </p>
-                {/* TODO: swap this placeholder for the actual interactive component */}
-                <div className="rounded-lg border border-cream/10 bg-navy-mid flex items-center justify-center h-64">
-                  <p className="font-mono text-xs uppercase tracking-widest text-cream/30">
-                    Interactive demo — coming soon
-                  </p>
-                </div>
+                {project.slug === "econometrics-viz" ? (
+                  <EconVizDemo />
+                ) : (
+                  <div className="rounded-lg border border-cream/10 bg-navy-mid flex items-center justify-center h-64">
+                    <p className="font-mono text-xs uppercase tracking-widest text-cream/30">
+                      Interactive demo — coming soon
+                    </p>
+                  </div>
+                )}
               </section>
             </>
           )}
