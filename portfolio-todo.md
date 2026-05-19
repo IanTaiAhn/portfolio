@@ -41,15 +41,15 @@ A working checklist for building out the portfolio site. Roughly ordered by prio
 
 ## Tier 5 — Last mile
 
-- [ ] **`components/layout/Footer.tsx`** — wire socials from `site-config.ts`
+- [x] **`components/layout/Footer.tsx`** — wire socials from `site-config.ts`
 - [x] **`app/contact/page.tsx`** — email, LinkedIn, GitHub links
 
 ---
 
 ## Navigation
 
-- [ ] Mobile menu — hamburger trigger + drawer in `Nav.tsx`
-- [ ] Active link highlighting (current route)
+- [x] Mobile menu — hamburger trigger + drawer in `Nav.tsx`
+- [x] Active link highlighting (current route)
 - [ ] Scroll state — nav background transition (transparent → solid)
 
 ---
@@ -67,7 +67,7 @@ A working checklist for building out the portfolio site. Roughly ordered by prio
 
 ## Project filtering
 
-- [ ] Wire `CategoryFilter` state to `ProjectGrid` in `app/projects/page.tsx`
+- [x] Wire `CategoryFilter` state to `ProjectGrid` in `app/projects/page.tsx`
 - [ ] Optional: sync active filter to URL search params (`?category=NLP`)
 
 ---
