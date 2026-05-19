@@ -29,7 +29,7 @@ export default function Nav() {
 
   return (
     <>
-      <header className="fixed left-0 right-0 top-0 z-50 px-6 py-6 md:px-12">
+      <header className="fixed left-0 right-0 top-0 z-50 px-6 py-6 md:px-12 backdrop-blur-sm bg-navy/80">
         <nav className="mx-auto flex max-w-7xl items-center justify-between">
           <Link
             href="/"
