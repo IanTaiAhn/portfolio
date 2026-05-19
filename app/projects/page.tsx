@@ -1,10 +1,9 @@
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
-import ProjectGrid from "@/components/sections/ProjectGrid";
-import CategoryFilter from "@/components/ui/CategoryFilter";
+import ProjectsClient from "@/components/sections/ProjectsClient";
 
 // PROJECTS (/projects)
-// Filterable grid: ML, NLP, Econometrics, Data Science
+// Filterable grid: ML, NLP, Econometrics, Data Science, Automation
 // Each card → /projects/[slug]
 export default function ProjectsPage() {
   return (
@@ -16,11 +15,9 @@ export default function ProjectsPage() {
             02 / Selected Work
           </p>
           <h1 className="mt-6 font-display text-display-lg text-cream">
-            {/* PLACEHOLDER: Projects headline */}
             Projects
           </h1>
-          <CategoryFilter />
-          <ProjectGrid />
+          <ProjectsClient />
         </div>
       </section>
       <Footer />
