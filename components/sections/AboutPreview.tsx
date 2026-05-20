@@ -1,25 +1,49 @@
-import Link from "next/link";
+"use client";
 
-// ABOUT PREVIEW (home page)
-// Short teaser → full /about page.
-// TODO: copy, headshot or geometric portrait substitute, skills cluster preview
+import Link from "next/link";
+import { motion } from "framer-motion";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 32 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
+const stagger = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.12 } },
+};
+
 export default function AboutPreview() {
   return (
     <section className="px-6 py-32 md:px-12">
       <div className="mx-auto max-w-7xl">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-amber">
-          03 / About
-        </p>
-        <h2 className="mt-4 max-w-4xl font-display text-display-md text-cream">
-          {/* PLACEHOLDER: about teaser headline (1 sentence, big) */}
-          A mixture of data science, machine learning, software engineering, all blended together in my brain.
-        </h2>
-        <Link
-          href="/about"
-          className="mt-12 inline-block font-mono text-sm uppercase tracking-widest text-amber hover:text-amber-electric transition-colors"
+        <motion.div
+          variants={stagger}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-80px" }}
         >
-          More about me →
-        </Link>
+          <motion.p
+            variants={fadeUp}
+            className="font-mono text-xs uppercase tracking-[0.2em] text-amber"
+          >
+            03 / About
+          </motion.p>
+          <motion.h2
+            variants={fadeUp}
+            className="mt-4 max-w-4xl font-display text-display-md text-cream"
+          >
+            A mixture of data science, machine learning, software engineering, all blended together in my brain.
+          </motion.h2>
+          <motion.div variants={fadeUp}>
+            <Link
+              href="/about"
+              className="mt-12 inline-block font-mono text-sm uppercase tracking-widest text-amber hover:text-amber-electric transition-colors"
+            >
+              More about me →
+            </Link>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

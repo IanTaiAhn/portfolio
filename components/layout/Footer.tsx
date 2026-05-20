@@ -19,7 +19,7 @@ export default function Footer() {
               href={siteConfig.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-mono text-xs uppercase tracking-widest text-cream/50 transition-colors hover:text-amber"
+              className="py-2 font-mono text-xs uppercase tracking-widest text-cream/50 transition-colors hover:text-amber"
             >
               GitHub
             </a>
@@ -27,13 +27,13 @@ export default function Footer() {
               href={siteConfig.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-mono text-xs uppercase tracking-widest text-cream/50 transition-colors hover:text-amber"
+              className="py-2 font-mono text-xs uppercase tracking-widest text-cream/50 transition-colors hover:text-amber"
             >
               LinkedIn
             </a>
             <a
               href={`mailto:${siteConfig.email}`}
-              className="font-mono text-xs uppercase tracking-widest text-cream/50 transition-colors hover:text-amber"
+              className="py-2 font-mono text-xs uppercase tracking-widest text-cream/50 transition-colors hover:text-amber"
             >
               Email
             </a>
