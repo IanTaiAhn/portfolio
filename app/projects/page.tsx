@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
 import ProjectsClient from "@/components/sections/ProjectsClient";
@@ -17,7 +18,9 @@ export default function ProjectsPage() {
           <h1 className="mt-6 font-display text-display-lg text-cream">
             Projects
           </h1>
-          <ProjectsClient />
+          <Suspense fallback={null}>
+            <ProjectsClient />
+          </Suspense>
         </div>
       </section>
       <Footer />

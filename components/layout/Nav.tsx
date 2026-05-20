@@ -15,6 +15,13 @@ const links = [
 export default function Nav() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   // Close drawer on route change
   useEffect(() => {
@@ -29,7 +36,7 @@ export default function Nav() {
 
   return (
     <>
-      <header className="fixed left-0 right-0 top-0 z-50 px-6 py-6 md:px-12 backdrop-blur-sm bg-navy/80">
+      <header className={`fixed left-0 right-0 top-0 z-50 px-6 py-6 md:px-12 backdrop-blur-sm transition-colors duration-300 ${scrolled ? "bg-navy/95 shadow-[0_1px_0_0_rgba(255,255,255,0.06)]" : "bg-transparent"}`}>
         <nav className="mx-auto flex max-w-7xl items-center justify-between">
           <Link
             href="/"
