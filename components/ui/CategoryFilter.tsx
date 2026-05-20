@@ -25,7 +25,7 @@ export default function CategoryFilter({ active, onSelect }: Props) {
         <button
           key={c}
           onClick={() => onSelect(c)}
-          className={`border px-4 py-2 font-mono text-xs uppercase tracking-widest transition-colors ${
+          className={`border px-4 py-2.5 min-h-[44px] font-mono text-xs uppercase tracking-widest transition-colors active:scale-[0.97] ${
             active === c
               ? "border-amber text-amber"
               : "border-cream/20 text-cream/70 hover:border-amber hover:text-amber"

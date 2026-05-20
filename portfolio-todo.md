@@ -34,8 +34,8 @@ A working checklist for building out the portfolio site. Roughly ordered by prio
 ## Tier 4 — Project detail pages
 
 - [x] **`app/projects/[slug]/page.tsx`** — Problem → Approach → Result narrative rendering
-- [ ] "Back to projects" nav element on detail pages
-- [ ] GitHub link button on detail pages
+- [x] "Back to projects" nav element on detail pages
+- [x] GitHub link button on detail pages
 
 ---
 
@@ -50,45 +50,45 @@ A working checklist for building out the portfolio site. Roughly ordered by prio
 
 - [x] Mobile menu — hamburger trigger + drawer in `Nav.tsx`
 - [x] Active link highlighting (current route)
-- [ ] Scroll state — nav background transition (transparent → solid)
+- [x] Scroll state — nav background transition (transparent → solid)
 
 ---
 
 ## Hero & Home sections
 
-- [ ] Scroll indicator (animated arrow or progress line)
+- [x] Scroll indicator (animated arrow or progress line)
 - [ ] Ambient visual element (generative or editorial graphic)
-- [ ] "Explore my work" CTA button wired to `/projects`
-- [ ] Staggered reveal animations (Framer Motion)
-- [ ] **`components/sections/FeaturedProjects.tsx`** — "View all →" link in section header
-- [ ] Scroll-triggered reveals on FeaturedProjects and AboutPreview
+- [x] "Explore my work" CTA button wired to `/projects`
+- [x] Staggered reveal animations (Framer Motion)
+- [x] **`components/sections/FeaturedProjects.tsx`** — "View all →" link in section header
+- [x] Scroll-triggered reveals on FeaturedProjects and AboutPreview
 
 ---
 
 ## Project filtering
 
 - [x] Wire `CategoryFilter` state to `ProjectGrid` in `app/projects/page.tsx`
-- [ ] Optional: sync active filter to URL search params (`?category=NLP`)
+- [x] Optional: sync active filter to URL search params (`?category=NLP`)
 
 ---
 
 ## Mobile pass
 
-- [ ] Audit Hero spacing on mobile (`pt-40 pb-24` may feel tall)
-- [ ] Tap/active states on ProjectCard (hover doesn't fire on touch)
-- [ ] Verify touch target sizes (44px minimum) on filter chips, footer links
+- [x] Audit Hero spacing on mobile (`pt-40 pb-24` may feel tall)
+- [x] Tap/active states on ProjectCard (hover doesn't fire on touch)
+- [x] Verify touch target sizes (44px minimum) on filter chips, footer links
 - [ ] Test on real device, not just DevTools
 
 ---
 
 ## Animation pass
 
-- [ ] Hero: staggered reveal on load (Framer Motion)
-- [ ] Scroll-triggered reveals on FeaturedProjects, AboutPreview
-- [ ] Page transitions between routes
+- [x] Hero: staggered reveal on load (Framer Motion)
+- [x] Scroll-triggered reveals on FeaturedProjects, AboutPreview
+- [x] Page transitions between routes
 - [ ] ProjectCard hover: layout shift or visual swap
-- [ ] Scroll indicator in Hero (animated arrow or progress line)
-- [ ] Nav scroll state (transparent → solid background)
+- [x] Scroll indicator in Hero (animated arrow or progress line)
+- [x] Nav scroll state (transparent → solid background)
 
 ---
 

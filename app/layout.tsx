@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Newsreader, JetBrains_Mono, Nanum_Brush_Script } from "next/font/google";
+import PageTransition from "@/components/layout/PageTransition";
 import "./globals.css";
 
 // PLACEHOLDER FONTS — chosen for an editorial-meets-technical feel.
@@ -46,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable} ${calligraphy.variable}`}>
       <body className="min-h-screen bg-navy text-cream antialiased">
-        {children}
+        <PageTransition>{children}</PageTransition>
       </body>
     </html>
   );
