@@ -27,24 +27,13 @@ export default function FeaturedProjects() {
           whileInView="show"
           viewport={{ once: true, margin: "-80px" }}
         >
-          <motion.div
-            variants={fadeUp}
-            className="mb-16 flex items-end justify-between"
-          >
-            <div>
-              <p className="font-mono text-xs uppercase tracking-[0.2em] text-amber">
-                02 / Selected Work
-              </p>
-              <h2 className="mt-4 font-display text-display-md text-cream">
-                What I've built.
-              </h2>
-            </div>
-            <Link
-              href="/projects"
-              className="font-mono text-xs uppercase tracking-widest text-cream/50 transition-colors hover:text-amber"
-            >
-              View all →
-            </Link>
+          <motion.div variants={fadeUp} className="mb-16">
+            <p className="font-mono text-xs uppercase tracking-[0.2em] text-amber">
+              02 / Selected Work
+            </p>
+            <h2 className="mt-4 font-display text-display-md text-cream">
+              What I've built.
+            </h2>
           </motion.div>
 
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
@@ -54,6 +43,15 @@ export default function FeaturedProjects() {
               </motion.div>
             ))}
           </div>
+
+          <motion.div variants={fadeUp} className="mt-16 flex justify-end">
+            <Link
+              href="/projects"
+              className="font-mono text-xs uppercase tracking-widest text-cream/50 transition-colors hover:text-amber"
+            >
+              View all →
+            </Link>
+          </motion.div>
         </motion.div>
       </div>
     </section>
