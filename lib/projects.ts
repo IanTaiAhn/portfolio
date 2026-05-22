@@ -28,6 +28,7 @@ const projects: Project[] = [
     category: "NLP",
     tags: ["RAG", "Python", "FastAPI", "Qwen2.5", "FAISS", "MiniLM"],
     year: "2025",
+    github: "https://github.com/IanTaiAhn/rag",
     featured: true,
     hasDemo: true,
     problem:
@@ -44,6 +45,7 @@ const projects: Project[] = [
     category: "Econometrics",
     tags: ["Python", "FastAPI", "React", "FRED API", "SARIMAX"],
     year: "2025",
+    github: "https://github.com/IanTaiAhn/healthcare_dashboard",
     featured: true,
     hasDemo: true,
     problem:
@@ -60,6 +62,7 @@ const projects: Project[] = [
     category: "Automation",
     tags: ["Python", "Playwright", "Automation", "VPS", "ntfy.sh"],
     year: "2025",
+    github: "https://github.com/IanTaiAhn/wornwear_bot",
     featured: true,
     problem:
       "Patagonia's Worn Wear secondhand site lists vintage grails — Synchilla fleeces, Snap-Ts, Retro-X jackets — that sell out within minutes of going live. Manually refreshing is hopeless. The broader problem is structural: the just-added collection has 15,000+ items, and the site's pagination bails after a few clicks with no new results, so naive scraping only sees a few hundred items and misses anything buried deeper.",

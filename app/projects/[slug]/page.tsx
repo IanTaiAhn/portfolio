@@ -53,7 +53,7 @@ export default function ProjectDetailPage({
   ].filter((s) => s.body);
 
   return (
-    <main className="relative bg-navy-DEFAULT min-h-screen">
+    <main id="main-content" className="relative bg-navy-DEFAULT min-h-screen">
       <Nav />
 
       <article className="px-6 py-32 md:px-12">

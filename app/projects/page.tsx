@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <main className="relative">
+    <main id="main-content" className="relative">
       <Nav />
       <section className="px-6 py-32 md:px-12">
         <div className="mx-auto max-w-7xl">
