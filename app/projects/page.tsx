@@ -1,11 +1,20 @@
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
 import ProjectsClient from "@/components/sections/ProjectsClient";
 
-// PROJECTS (/projects)
-// Filterable grid: ML, NLP, Econometrics, Data Science, Automation
-// Each card → /projects/[slug]
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "Selected work in machine learning, NLP, econometrics, and automation.",
+  openGraph: {
+    title: "Projects — Ian Tai Ahn",
+    description:
+      "Selected work in machine learning, NLP, econometrics, and automation.",
+  },
+};
+
 export default function ProjectsPage() {
   return (
     <main className="relative">

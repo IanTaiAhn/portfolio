@@ -1,6 +1,16 @@
+import type { Metadata } from "next";
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
 import { siteConfig } from "@/lib/site-config";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Get in touch with Ian Tai Ahn via email or find his work on GitHub.",
+  openGraph: {
+    title: "Contact — Ian Tai Ahn",
+    description: "Get in touch with Ian Tai Ahn via email or find his work on GitHub.",
+  },
+};
 
 export default function ContactPage() {
   return (
