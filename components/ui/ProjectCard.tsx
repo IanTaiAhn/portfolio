@@ -8,7 +8,7 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <Link
       href={`/projects/${project.slug}`}
-      className="group block border border-cream/10 p-8 transition-colors hover:border-amber active:scale-[0.99] active:border-amber/60"
+      className="group block h-full border border-cream/10 p-8 transition-colors hover:border-amber active:scale-[0.99] active:border-amber/60"
     >
       <div className="flex items-center justify-between">
         <span className="font-mono text-[10px] uppercase tracking-widest text-amber">
