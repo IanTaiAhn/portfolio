@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import Nav from "@/components/layout/Nav";
@@ -18,6 +19,23 @@ const EconVizDemo = dynamic(() => import("@/components/demos/EconVizDemo"), {
 
 export async function generateStaticParams() {
   return getAllProjectSlugs().map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const project = getProjectBySlug(params.slug);
+  if (!project) return {};
+  return {
+    title: project.title,
+    description: project.hook,
+    openGraph: {
+      title: `${project.title} — Ian Tai Ahn`,
+      description: project.hook,
+    },
+  };
 }
 
 export default function ProjectDetailPage({

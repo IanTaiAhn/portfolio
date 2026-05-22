@@ -1,6 +1,18 @@
+import type { Metadata } from "next";
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
 import { siteConfig } from "@/lib/site-config";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Software engineer and ML practitioner. BS in Computer Science, MS in Data Science. Based in South Ogden, UT.",
+  openGraph: {
+    title: "About — Ian Tai Ahn",
+    description:
+      "Software engineer and ML practitioner. BS in Computer Science, MS in Data Science. Based in South Ogden, UT.",
+  },
+};
 
 export default function AboutPage() {
   return (
