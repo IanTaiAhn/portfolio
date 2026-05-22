@@ -1,41 +1,10 @@
-import { ImageResponse } from "next/og";
-import { readFileSync } from "fs";
-import { join } from "path";
-
+// SVG response sidesteps the @vercel/og Windows font-path bug (ERR_INVALID_URL on file:// paths).
+export const contentType = "image/svg+xml";
 export const size = { width: 180, height: 180 };
-export const contentType = "image/png";
 
 export default function AppleIcon() {
-  const fontBytes = readFileSync(
-    join(process.cwd(), "node_modules/next/dist/compiled/@vercel/og/noto-sans-v27-latin-regular.ttf")
-  );
-  const font = fontBytes.buffer.slice(fontBytes.byteOffset, fontBytes.byteOffset + fontBytes.byteLength) as ArrayBuffer;
-
-  return new ImageResponse(
-    (
-      <div
-        style={{
-          background: "#0B1626",
-          width: "100%",
-          height: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          borderRadius: "28px",
-        }}
-      >
-        <span
-          style={{
-            color: "#FFB627",
-            fontSize: 88,
-            letterSpacing: "-3px",
-            fontFamily: "sans",
-          }}
-        >
-          IA
-        </span>
-      </div>
-    ),
-    { ...size, fonts: [{ name: "sans", data: font, style: "normal" }] }
+  return new Response(
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180"><rect width="180" height="180" rx="28" fill="#0B1626"/><text x="90" y="127" text-anchor="middle" font-family="Georgia,serif" font-size="88" font-weight="bold" fill="#FFB627" letter-spacing="-3">IA</text></svg>',
+    { headers: { "Content-Type": "image/svg+xml" } }
   );
 }
