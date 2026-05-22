@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Newsreader, JetBrains_Mono, Nanum_Brush_Script } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import PageTransition from "@/components/layout/PageTransition";
 import "./globals.css";
 
@@ -57,7 +58,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable} ${calligraphy.variable}`}>
       <body className="min-h-screen bg-navy text-cream antialiased">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-amber focus:px-4 focus:py-2 focus:font-mono focus:text-sm focus:text-navy"
+        >
+          Skip to main content
+        </a>
         <PageTransition>{children}</PageTransition>
+        <Analytics />
       </body>
     </html>
   );

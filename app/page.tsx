@@ -9,7 +9,7 @@ import AboutPreview from "@/components/sections/AboutPreview";
 // Detailed content lands in components/sections/*.tsx
 export default function HomePage() {
   return (
-    <main className="relative">
+    <main id="main-content" className="relative">
       <Nav />
       <Hero />
       <FeaturedProjects />
