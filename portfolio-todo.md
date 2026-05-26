@@ -106,15 +106,16 @@ A working checklist for building out the portfolio site. Roughly ordered by prio
 ## Polish & deploy
 
 - [ ] Noise/grain texture overlay (replace placeholder dot pattern in `globals.css`)
-- [ ] Custom favicon
-- [ ] OG image for social previews
+- [ ] Custom favicon (SVG `icon.tsx` exists; add `.ico` fallback for older browsers if desired)
+- [x] OG image for social previews (`app/opengraph-image.tsx` + per-project `[slug]/opengraph-image.tsx`)
 - [ ] Verify `resume.pdf` in `/public/resume.pdf` is current
-- [ ] Lighthouse audit (performance, a11y, SEO)
-- [ ] Keyboard navigation pass — focus rings, skip links
+- [ ] Lighthouse audit (performance, a11y, SEO) — run after deploy
+- [x] Keyboard navigation pass — focus rings, skip links (skip-to-main in `layout.tsx`, focus rings throughout)
+- [ ] Test on real device, not just DevTools
 - [ ] Buy custom domain
 - [ ] Deploy to Vercel
 - [ ] Connect custom domain in Vercel settings
-- [ ] Set up analytics (Vercel Analytics or Plausible)
+- [x] Set up analytics — Vercel Analytics wired in `layout.tsx`; enable in Vercel dashboard after deploy
 
 ---
 
@@ -124,6 +125,20 @@ A working checklist for building out the portfolio site. Roughly ordered by prio
 - [ ] Font pairing confirmed? (currently Bricolage Grotesque + Newsreader + JetBrains Mono)
 - [ ] Blog / writing section — yes or no?
 - [ ] Final domain name
+
+---
+
+## Deployment steps (in order)
+
+1. [ ] Buy your domain (`.dev`, `.com`, etc.)
+2. [ ] Update `lib/site-config.ts` line 14 — replace `"yourname.dev"` with your real domain (affects sitemap, robots.txt, and OG metadata)
+3. [ ] Verify `public/resume.pdf` is the version you want live
+4. [ ] Push latest code to GitHub
+5. [ ] Connect the GitHub repo to Vercel (auto-detects Next.js — no `vercel.json` needed)
+6. [ ] In Vercel dashboard: **Settings → Domains** — add your custom domain
+7. [ ] Point your domain's DNS to Vercel's nameservers (or add the A/CNAME records Vercel gives you)
+8. [ ] Enable Vercel Analytics in the Vercel dashboard
+9. [ ] Run a Lighthouse audit on the live URL and address any regressions
 
 ---
 
