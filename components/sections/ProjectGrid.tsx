@@ -17,7 +17,7 @@ export default function ProjectGrid({ filter }: Props) {
       {projects.length > 0 ? (
         projects.map((p) => <ProjectCard key={p.slug} project={p} />)
       ) : (
-        <p className="col-span-full font-mono text-xs uppercase tracking-widest text-cream/40">
+        <p className="col-span-full font-mono text-xs uppercase tracking-widest text-cream/60">
           No projects in this category yet.
         </p>
       )}

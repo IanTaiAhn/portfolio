@@ -61,7 +61,7 @@ export default function ContactPage() {
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-amber/40 group-hover:text-amber transition-colors"
+                className="text-amber/60 group-hover:text-amber transition-colors"
                 aria-hidden="true"
               >
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
@@ -78,7 +78,7 @@ export default function ContactPage() {
               className="group flex items-center justify-between rounded-xl border border-cream/10 px-8 py-6 transition-colors hover:border-cream/30 hover:bg-cream/5"
             >
               <div>
-                <p className="font-mono text-xs uppercase tracking-[0.2em] text-cream/30 mb-1">
+                <p className="font-mono text-xs uppercase tracking-[0.2em] text-cream/60 mb-1">
                   GitHub
                 </p>
                 <p className="font-body text-xl text-cream/70 group-hover:text-cream transition-colors">
@@ -95,7 +95,7 @@ export default function ContactPage() {
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-cream/20 group-hover:text-cream/50 transition-colors"
+                className="text-cream/50 group-hover:text-cream/50 transition-colors"
                 aria-hidden="true"
               >
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
@@ -112,7 +112,7 @@ export default function ContactPage() {
               className="group flex items-center justify-between rounded-xl border border-cream/10 px-8 py-6 transition-colors hover:border-cream/30 hover:bg-cream/5"
             >
               <div>
-                <p className="font-mono text-xs uppercase tracking-[0.2em] text-cream/30 mb-1">
+                <p className="font-mono text-xs uppercase tracking-[0.2em] text-cream/60 mb-1">
                   LinkedIn
                 </p>
                 <p className="font-body text-xl text-cream/70 group-hover:text-cream transition-colors">
@@ -129,7 +129,7 @@ export default function ContactPage() {
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="text-cream/20 group-hover:text-cream/50 transition-colors"
+                className="text-cream/50 group-hover:text-cream/50 transition-colors"
                 aria-hidden="true"
               >
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />

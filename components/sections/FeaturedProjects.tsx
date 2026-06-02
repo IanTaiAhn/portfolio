@@ -47,7 +47,7 @@ export default function FeaturedProjects() {
           <motion.div variants={fadeUp} className="mt-16 flex justify-end">
             <Link
               href="/projects"
-              className="font-mono text-xs uppercase tracking-widest text-cream/50 transition-colors hover:text-amber"
+              className="font-mono text-xs uppercase tracking-widest text-cream/65 transition-colors hover:text-amber"
             >
               View all →
             </Link>

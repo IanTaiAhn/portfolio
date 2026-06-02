@@ -68,7 +68,7 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.6 }}
       >
-        <span className="font-mono text-[10px] uppercase tracking-widest text-cream/30">
+        <span className="font-mono text-[10px] uppercase tracking-widest text-cream/60">
           Scroll
         </span>
         <motion.div
@@ -85,7 +85,7 @@ export default function Hero() {
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="text-cream/30"
+            className="text-cream/60"
             aria-hidden="true"
           >
             <line x1="12" y1="5" x2="12" y2="19" />
