@@ -58,7 +58,7 @@ function HeadlineSignal() {
               <span className={`w-1.5 h-1.5 rounded-full ${style.dot}`} />
               {style.label}
             </span>
-            <span className="font-mono text-xs text-cream/30">
+            <span className="font-mono text-xs text-cream/60">
               {arrow} CSS {SIGNAL.composite_stress_score}/100 · 3m +{SIGNAL.composite_stress_score - SIGNAL.momentum.css_3m_ago}pts
             </span>
           </div>
@@ -76,7 +76,7 @@ function HeadlineSignal() {
               {SIGNAL.composite_stress_score}
             </span>
           </div>
-          <p className="text-xs text-cream/30 mt-1 font-mono">CSS</p>
+          <p className="text-xs text-cream/60 mt-1 font-mono">CSS</p>
         </div>
       </div>
 
@@ -84,7 +84,7 @@ function HeadlineSignal() {
       <div className="mt-4 pt-4 border-t border-cream/5 flex flex-wrap gap-6">
         {Object.entries(SIGNAL.components).map(([key, val]) => (
           <div key={key} className="text-xs font-mono">
-            <span className="text-cream/30">{key.replace(/_percentile$/, "").replace(/_/g, " ")}</span>
+            <span className="text-cream/60">{key.replace(/_percentile$/, "").replace(/_/g, " ")}</span>
             <span className={`ml-2 font-semibold ${style.text}`}>{val}th pct</span>
           </div>
         ))}
@@ -116,11 +116,11 @@ function EmploymentChart() {
         <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-amber-DEFAULT">
           Employment Trend
         </h3>
-        <span className="font-mono text-xs text-cream/30">
+        <span className="font-mono text-xs text-cream/60">
           Last actual: {last_actual.value}k ({last_actual.month})
         </span>
       </div>
-      <p className="text-xs text-cream/40 mb-4">
+      <p className="text-xs text-cream/65 mb-4">
         UTEDUH — Ed & Health Services (Private, SA). 24-month trailing + 6-month SARIMAX forecast, 80% CI.
       </p>
 
@@ -211,7 +211,7 @@ function EmploymentChart() {
         </div>
 
         {/* Model performance footnote */}
-        <p className="text-xs font-mono text-cream/25 mt-3">
+        <p className="text-xs font-mono text-cream/55 mt-3">
           Model 6m MAE: {model_mae_6m}k · Naive baseline: {naive_baseline_mae_6m}k ·{" "}
           <span className="text-green-500/60">✓ beats baseline</span>
         </p>
@@ -226,7 +226,7 @@ function WageStats() {
   const stats = [
     { label: "Nominal Wage Growth", value: `${WAGES.nominal_pct}%`, sub: "YoY", accent: "text-cream" },
     { label: "Real Wage Growth", value: `${WAGES.real_pct}%`, sub: "CPI-adjusted", accent: "text-green-400" },
-    { label: "CPI Inflation", value: `${WAGES.cpi_pct}%`, sub: "YoY", accent: "text-cream/50" },
+    { label: "CPI Inflation", value: `${WAGES.cpi_pct}%`, sub: "YoY", accent: "text-cream/60" },
     {
       label: "6-Month Projection",
       value: `${WAGES.forecast_low}–${WAGES.forecast_high}%`,
@@ -246,9 +246,9 @@ function WageStats() {
             key={label}
             className="rounded-lg border border-cream/10 bg-navy-mid p-4"
           >
-            <p className="text-xs text-cream/40 font-mono mb-1">{label}</p>
+            <p className="text-xs text-cream/65 font-mono mb-1">{label}</p>
             <p className={`text-2xl font-bold font-mono ${accent}`}>{value}</p>
-            <p className="text-xs text-cream/25 mt-0.5">{sub}</p>
+            <p className="text-xs text-cream/55 mt-0.5">{sub}</p>
           </div>
         ))}
       </div>
@@ -265,7 +265,7 @@ export default function EconVizDemo() {
       <EmploymentChart />
       <WageStats />
 
-      <p className="font-mono text-xs text-cream/20">
+      <p className="font-mono text-xs text-cream/60">
         Data: FRED (UTEDUH, JOLTS, CPI) · Model: SARIMAX · Status: demo snapshot —
         live pipeline in development
       </p>

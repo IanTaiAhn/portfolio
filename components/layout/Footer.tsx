@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 md:flex-row md:items-end">
         <div>
           <p className="font-display text-2xl text-cream">{siteConfig.name}</p>
-          <p className="mt-2 font-mono text-xs uppercase tracking-widest text-cream/50">
+          <p className="mt-2 font-mono text-xs uppercase tracking-widest text-cream/65">
             {siteConfig.location}
           </p>
         </div>
@@ -19,7 +19,7 @@ export default function Footer() {
               href={siteConfig.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="py-2 font-mono text-xs uppercase tracking-widest text-cream/50 transition-colors hover:text-amber"
+              className="py-2 font-mono text-xs uppercase tracking-widest text-cream/65 transition-colors hover:text-amber"
             >
               GitHub
             </a>
@@ -27,18 +27,18 @@ export default function Footer() {
               href={siteConfig.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="py-2 font-mono text-xs uppercase tracking-widest text-cream/50 transition-colors hover:text-amber"
+              className="py-2 font-mono text-xs uppercase tracking-widest text-cream/65 transition-colors hover:text-amber"
             >
               LinkedIn
             </a>
             <a
               href={`mailto:${siteConfig.email}`}
-              className="py-2 font-mono text-xs uppercase tracking-widest text-cream/50 transition-colors hover:text-amber"
+              className="py-2 font-mono text-xs uppercase tracking-widest text-cream/65 transition-colors hover:text-amber"
             >
               Email
             </a>
           </div>
-          <p className="font-mono text-xs uppercase tracking-widest text-cream/40">
+          <p className="font-mono text-xs uppercase tracking-widest text-cream/60">
             © {new Date().getFullYear()}
           </p>
         </div>

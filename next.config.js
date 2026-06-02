@@ -1,6 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+
+  // Performance optimizations
+  swcMinify: true,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production",
+  },
+
+  // Image optimization
+  images: {
+    formats: ['image/avif', 'image/webp'],
+  },
+
   async headers() {
     return [
       {

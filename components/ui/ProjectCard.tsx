@@ -14,7 +14,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         <span className="font-mono text-[10px] uppercase tracking-widest text-amber">
           {project.category}
         </span>
-        <span className="font-mono text-[10px] uppercase tracking-widest text-cream/40">
+        <span className="font-mono text-[10px] uppercase tracking-widest text-cream/60">
           {project.year}
         </span>
       </div>

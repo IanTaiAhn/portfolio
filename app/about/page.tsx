@@ -1,7 +1,15 @@
 import type { Metadata } from "next";
+import { Nanum_Brush_Script } from "next/font/google";
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
 import { siteConfig } from "@/lib/site-config";
+
+const calligraphy = Nanum_Brush_Script({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-calligraphy",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "About",
@@ -16,7 +24,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main id="main-content" className="relative">
+    <main id="main-content" className={`relative ${calligraphy.variable}`}>
       <Nav />
 
       <section className="min-h-screen px-6 py-32 md:px-12">

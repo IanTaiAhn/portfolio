@@ -61,7 +61,7 @@ export default function Nav() {
                       className={`font-mono text-[10px] uppercase tracking-widest transition-colors ${
                         active
                           ? "text-amber/70"
-                          : "text-cream/40 group-hover:text-amber/70"
+                          : "text-cream/60 group-hover:text-amber/70"
                       }`}
                     >
                       {l.num}
@@ -117,7 +117,7 @@ export default function Nav() {
                     active ? "text-amber" : "text-cream"
                   }`}
                 >
-                  <span className="font-mono text-xs uppercase tracking-widest text-cream/40">
+                  <span className="font-mono text-xs uppercase tracking-widest text-cream/60">
                     {l.num}
                   </span>
                   <span className="font-display text-4xl">{l.label}</span>
